@@ -40,13 +40,6 @@ $("body").keypress(function(){
     nextSequence();
     $("h1").text("Level "+level);
   }
-  $("body").click(function(){
-    if(check==true)
-    {
-      check=false;
-      nextSequence();
-      $("h1").text("Level "+level);
-    }
 });
 function checkAnswer(currentLevel)
 {
@@ -68,7 +61,7 @@ function checkAnswer(currentLevel)
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
-    $("h1").text("Game Over, Press Any Key/touch anywhere to Restart");
+    $("h1").text("Game Over, Press Any Key to Restart");
     startover();
   }
 }
